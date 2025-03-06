@@ -21,7 +21,7 @@ node * listSearch(list * L, int key) {
     return x;
 } 
 
-void listInsert(list * L, int key) {
+void listPrepend(list * L, int key) {
     node * x = createNode(key);
     x->next = L->head;
     L->head = x;
@@ -40,7 +40,7 @@ void listInsertAtEnd(list * L, int key) {
     return;
 }
 
-void listInsertAfterNode(node * x, int key) {
+void listInsert(node * x, int key) {
     node * y = createNode(key);
     y->next = x->next;
     x->next = y;
