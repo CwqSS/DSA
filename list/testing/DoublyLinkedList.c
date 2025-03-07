@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../singly-linked/list.h"
+#include "../doubly-linked/list.h"
 
 int main() {
     node * x, * y, *z;
