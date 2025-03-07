@@ -49,13 +49,14 @@ void listInsertAtEnd(list * L, int key) {
     while(y->next != NULL)
         y = y->next;
     y->next = x;
+    x->previous = y;
     return;
 }
 void listDelete(list * L, node * x) {
     if(x->previous != NULL) {
         x->previous->next = x->next;
     }
-    else L->head = x->head;
+    else L->head = x->next;
     if(x->next != NULL)
         x->next->previous = x->previous;
 }
