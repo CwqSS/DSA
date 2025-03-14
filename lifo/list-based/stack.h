@@ -8,7 +8,7 @@ typedef struct stack {
     sNode * top;
 } stack;
 sNode * createSNode(int value);
-stack * createStack(int size);
+stack * createStack();
 // int isStackFull(stack * S);
 int isStackEmpty(stack * S);
 void push(stack * S, int element);
